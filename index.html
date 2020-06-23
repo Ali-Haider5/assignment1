@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+      <div>
+        <img src="images/bike.jpg" alt="">
+      </div>
+      <div class="inputfield terms">
+        <label class="check">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <p>I agree with all terms and conditions</p>
+      </div>
+      <div class="inputfield">
+        <div class="inputfield">
+          <label>Email</label>
+          <input type="text" class="input">
+
+          <div class="custom_select">
+            <select>
+              <option value="male">@hotmail,com</option>
+              <option value="female">@yahoo.com</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputfield">
+        <label>Password</label>
+        <input name="password" class="input" id="password" type="password" min="6" onkeyup='check();' />
+      </div>
+      <div class="inputfield">
+        <label>Retype Password</label>
+        <input class="input" type="password" name="confirm_password" id="confirm_password" onkeyup='check();' />
+      </div>
+      <div class="inputfield">
+        <label>Alternate Email</label>
+        <input type="email" class="input">
+      </div>
+      <div class="inputfield">
+        <label>First Name</label>
+        <input type="text" class="input">
+      </div>
+      <div class="inputfield">
+        <label>Last Name</label>
+        <input type="text" class="input">
+      </div>
+      <div class="inputfield">
+        <label>Postal Code</label>
+        <input type="text" class="input">
+      </div>
+      <div class="inputfield">
+        <label>Gender</label>
+        <input type="radio" name="gender" value="">Male&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="radio" name="gender" value="">Female
+      </div>
+      <div class="inputfield">
+        <label>Birth Year</label>
+        <input type="Number" max="4" class="input">
+      </div>
+      <div class="inputfield">
+        <input type="submit" value="I accept" class="btn">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="submit" value="Reset" class="btn">
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="js/psw.js" charset="utf-8"></script>
+
+</html>
